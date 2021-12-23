@@ -1,7 +1,7 @@
 {
     "name": "@skyrim-platform/jcontainers",
     "version": "4.2.1",
-    "description": "TypeScript type definitions for the JContinaers Skyrim utility",
+    "description": "(Unofficial) TypeScript library for the JContainers Skyrim modding utility",
     "main": "",
     "types": "index.d.ts",
     "license": "MIT",
