@@ -1,0 +1,34 @@
+{
+    "name": "@skyrim-platform/jcontainers",
+    "version": "2.3.0",
+    "description": "TypeScript type definitions for the JContinaers Skyrim utility",
+    "main": "",
+    "types": "index.d.ts",
+    "license": "MIT",
+    "homepage": "https://github.com/skyrim-platform/jcontainers",
+    "author": "Mrowr Purr <mrowr.purr@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/skyrim-platform/jcontainers.git"
+    },
+    "scripts": {
+        "build": "tsc",
+        "package": "yarn build && yarn deploy && yarn pack && yarn cleanup",
+        "deploy": "yarn build && cpy \"dist/*\" .",
+        "cleanup": "rimraf \"*.js\" \"*.ts\""
+    },
+    "devDependencies": {
+        "cpy": "^8.1.2",
+        "cpy-cli": "^3.1.1",
+        "rimraf": "^3.0.2",
+        "tsc": "^2.0.3",
+        "typescript": "^4.5.4"
+    },
+    "files": [
+        "*.js",
+        "*.ts"
+    ],
+    "dependencies": {
+        "@skyrim-platform/skyrim-platform": "file:../skyrim-platform"
+    }
+}
